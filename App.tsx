@@ -65,7 +65,7 @@ const Logo = ({ className = "w-12 h-12" }: { className?: string }) => (
   /* The logo image provided in the prompt is a gold interlocking geometric octagon/hexagon */
   <img 
     src="https://moderntouchrenovationsinc.ca/wp-content/uploads/2020/02/MT-Logo-Gold-300x300.png" 
-    alt="Modern Touch Renovations Logo" 
+    alt="xxxxxx xxxxx xxxxxxxxxxx xxxx" 
     className={`${className} object-contain`}
     onError={(e) => {
       // Fallback in case of link issues
@@ -85,7 +85,7 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-6 ${
+    <nav className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 px-4 sm:px-6 ${
       isScrolled ? 'py-3 md:py-4 bg-brand-black/90 backdrop-blur-md border-b border-white/5' : 'py-5 md:py-8 bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center gap-3">
@@ -93,7 +93,7 @@ const Header = () => {
           <Logo className="w-9 h-9 sm:w-10 sm:h-10 md:w-14 md:h-14 flex-shrink-0 group-hover:scale-105 transition-transform duration-500" />
           <div className="flex flex-col min-w-0">
             <span className="font-extrabold text-base sm:text-xl tracking-tighter uppercase leading-none truncate">
-              Modern Touch <span className="text-brand-accent">Renovations</span>
+              <span className="text-brand-accent">xxxxxx xxxxx xxxxxxxxxxx</span>
             </span>
             <span className="text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.2em] text-brand-accent uppercase font-medium mt-0.5 hidden sm:block">
               Project Management Done Right
@@ -136,7 +136,7 @@ const Header = () => {
 };
 
 const Hero = () => (
-  <section className="relative min-h-[85dvh] sm:min-h-[90vh] md:min-h-[95vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-24 px-4 sm:px-6 pb-16 bg-brand-black">
+  <section className="relative min-h-[85dvh] sm:min-h-[90vh] md:min-h-[95vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 px-4 sm:px-6 pb-16 bg-brand-black">
     <div className="absolute inset-0 z-0">
       <img 
         src="https://moderntouchrenovationsinc.ca/wp-content/uploads/2020/02/Commercial-Mobile-e1593128568959.jpg" 
@@ -167,7 +167,7 @@ const Hero = () => (
         
         <div className="max-w-3xl mx-auto mb-8 sm:mb-14 px-1">
             <p className="text-base sm:text-lg md:text-2xl text-white/70 leading-relaxed font-light">
-                Led by <span className="text-white font-semibold">Richard Falle</span>, a veteran project manager trusted by the Mike Holmes and Brian Baeumler communities.
+                Led by <span className="text-white font-semibold">xxxxxxx xxxxx</span>, a veteran project manager trusted by the Mike Holmes and Brian Baeumler communities.
             </p>
         </div>
         
@@ -366,7 +366,7 @@ const Contact = () => (
               </div>
               <div className="flex flex-col min-w-0">
                 <span className="text-[10px] sm:text-xs font-bold text-neutral-500 uppercase tracking-widest">Email</span>
-                <a href="mailto:Richard@ModernTouchRenovationsInc.ca" className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-neutral-900 hover:text-brand-accent transition-colors break-all">Richard@ModernTouchRenovationsInc.ca</a>
+                <a href="mailto:xxxxxxx@xxxxxxxxxxxxxxxxxxxxxxxxx.xx" className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-neutral-900 hover:text-brand-accent transition-colors break-all">xxxxxxx@xxxxxxxxxxxxxxxxxxxxxxxxx.xx</a>
               </div>
             </div>
             <div className="flex items-center gap-4 sm:gap-6 md:gap-8 group">
@@ -432,7 +432,7 @@ const Footer = () => (
           <Logo className="w-9 h-9 sm:w-10 sm:h-10 group-hover:rotate-12 transition-transform duration-500 flex-shrink-0" />
           <div className="flex flex-col min-w-0">
             <span className="font-black text-base sm:text-lg tracking-tight uppercase italic text-neutral-900 leading-tight">
-              Modern Touch <span className="text-brand-accent">Renovations Inc.</span>
+              <span className="text-brand-accent">xxxxxx xxxxx xxxxxxxxxxx</span> Inc.
             </span>
             <p className="text-neutral-500 text-[8px] sm:text-[9px] tracking-[0.15em] sm:tracking-[0.2em] uppercase font-bold">
                 Project Management Done Right
@@ -442,7 +442,7 @@ const Footer = () => (
       </div>
       
       <div className="text-neutral-500 text-[9px] sm:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] uppercase font-black order-last md:order-none">
-        © {new Date().getFullYear()} Burlington, ON | Richard Falle, Principal
+        © {new Date().getFullYear()} Burlington, ON | xxxxxxx xxxxx, Principal
       </div>
       
       <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 text-neutral-600 text-[10px] font-black uppercase tracking-[0.2em]">
@@ -457,6 +457,9 @@ const Footer = () => (
 export default function App() {
   return (
     <div className="min-h-screen overflow-x-hidden selection:bg-brand-accent selection:text-brand-black">
+      <div className="sticky top-0 left-0 right-0 z-[100] bg-amber-500/95 text-amber-950 text-center py-2 px-4 text-sm font-medium">
+        This is a Production Staging Environment. Sensitive client data has been scrubbed and replaced with placeholder content for internal review.
+      </div>
       <Header />
       <Hero />
       <div className="bg-stone-50 text-neutral-900">
